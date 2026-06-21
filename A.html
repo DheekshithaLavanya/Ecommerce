@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products</title>
+    <link rel="stylesheet" href="A.css">
+</head>
+<body>
+    <div class="page-header">
+        <div class="brand">
+            <div class="brand-badge">Shop</div>
+            <div>
+                <p class="brand-label">Product Store</p>
+                <h1>Products</h1>
+            </div>
+        </div>
+        <div class="filters">
+            <div class="search-box">
+                <input id="search" type="text" placeholder="Search products...">
+            </div>
+            <div class="category-box">
+                <select id="category-filter">
+                    <option value="">All categories</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <template id="products-template">
+        <a class="card-link" href="#">
+            <div class="card">
+                <img id="product-image" alt="Product image">
+                <div class="card-content">
+                    <h3 id="title"></h3>
+                    <p id="price"></p>
+                </div>
+            </div>
+        </a>
+    </template>
+    <div class="section-heading">
+        <h2>Products</h2>
+        <p>Click on a product to see more details</p>
+    </div>
+    <div id="products" class="products-grid"></div>
+    <script src="A.js"></script>
+</body>
+</html>
